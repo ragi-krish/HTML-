@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <form>
+            <!-- Step 1: Your Details -->
+            <fieldset>
+                <legend>Step 1: Your details</legend>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="First and last name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="example@domain.com">
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="Eg. +447500000000">
+            </fieldset>
+
+            <!-- Step 2: Delivery Address -->
+            <fieldset>
+                <legend>Step 2: Delivery address</legend>
+                <label for="address">Address</label>
+                <textarea id="address"></textarea>
+
+                <label for="postcode">Post code</label>
+                <input type="text" id="postcode">
+
+                <label for="country">Country</label>
+                <input type="text" id="country">
+            </fieldset>
+
+            <!-- Step 3: Card Details -->
+            <fieldset>
+                <legend>Step 3: Card details</legend>
+
+                <label>Card type</label>
+                <div class="card-options">
+                    <input type="radio" id="visa" name="card" value="visa">
+                    <label for="visa"><img src="visa-logo.png" alt="Visa"></label>
+
+                    <input type="radio" id="amex" name="card" value="amex">
+                    <label for="amex"><img src="amex-logo.png" alt="AmEx"></label>
+
+                    <input type="radio" id="mastercard" name="card" value="mastercard">
+                    <label for="mastercard"><img src="mastercard-logo.png" alt="Mastercard"></label>
+                </div>
+
+                <label for="card-number">Card number</label>
+                <input type="text" id="card-number">
+
+                <label for="security-code">Security code</label>
+                <input type="text" id="security-code">
+
+                <label for="card-name">Name on card</label>
+                <input type="text" id="card-name" placeholder="Exact name as on the card">
+            </fieldset>
+
+            <button type="submit">BUY IT!</button>
+        </form>
+    </div>
+
+</body>
+</html>
